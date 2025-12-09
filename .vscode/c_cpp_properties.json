@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "CITA_417_FPS_LabEditor Editor Linux Development (CITA_417_FPS_Lab)",
+            "compilerPath": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+            "compilerArgs": [
+                "-isysroot",
+                "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": [
+                "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_CITA_417_FPS_Lab.json"
+            ]
+        },
+        {
+            "name": "Linux",
+            "compilerPath": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+            "compilerArgs": [
+                "-isysroot",
+                "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": [
+                "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_Default.json"
+            ]
+        }
+    ],
+    "version": 4
+}

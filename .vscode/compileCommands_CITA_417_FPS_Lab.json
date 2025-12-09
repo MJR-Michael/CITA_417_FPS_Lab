@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Source/CITA_417_FPS_Lab/CITA_417_FPS_Lab.Build.cs",
+		"arguments": [
+			"/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_CITA_417_FPS_Lab/CITA_417_FPS_Lab.1.rsp"
+		],
+		"directory": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Source"
+	},
+	{
+		"file": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Source/CITA_417_FPS_Lab/CITA_417_FPS_Lab.cpp",
+		"arguments": [
+			"/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_CITA_417_FPS_Lab/CITA_417_FPS_Lab.1.rsp"
+		],
+		"directory": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Source"
+	},
+	{
+		"file": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Source/CITA_417_FPS_Lab/CITA_417_FPS_Lab.h",
+		"arguments": [
+			"/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_CITA_417_FPS_Lab/CITA_417_FPS_Lab.1.rsp"
+		],
+		"directory": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Source"
+	},
+	{
+		"file": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Source/CITA_417_FPS_Lab/Spawner.cpp",
+		"arguments": [
+			"/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_CITA_417_FPS_Lab/CITA_417_FPS_Lab.1.rsp"
+		],
+		"directory": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Source"
+	},
+	{
+		"file": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Source/CITA_417_FPS_Lab/Spawner.h",
+		"arguments": [
+			"/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/.vscode/compileCommands_CITA_417_FPS_Lab/CITA_417_FPS_Lab.1.rsp"
+		],
+		"directory": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Source"
+	}
+]

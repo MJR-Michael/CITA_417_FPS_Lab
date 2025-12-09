@@ -1,0 +1,911 @@
+{
+	"folders": [
+		{
+			"name": "CITA_417_FPS_Lab",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/jandel/Documents/Linux_Unreal_Engine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"terminal.integrated.env.linux": {
+			"PATH": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/ThirdParty/DotNet/8.0.300/linux-x64:${env:PATH}",
+			"DOTNET_ROOT": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/ThirdParty/DotNet/8.0.300/linux-x64",
+			"DOTNET_HOST_PATH": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/ThirdParty/DotNet/8.0.300/linux-x64/dotnet",
+			"DOTNET_MULTILEVEL_LOOKUP": "0",
+			"DOTNET_ROLL_FORWARD": "LatestMajor"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CITA_417_FPS_Lab Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Test",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Test",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Test",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Shipping",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Shipping",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"Linux",
+					"Shipping",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Test",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Test",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Test",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Shipping",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Shipping",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_Lab LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_Lab LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_Lab",
+					"LinuxArm64",
+					"Shipping",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_LabEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"Debug",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_LabEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"DebugGame",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CITA_417_FPS_LabEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"label": "CITA_417_FPS_LabEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CITA_417_FPS_LabEditor",
+					"Linux",
+					"Development",
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CITA_417_FPS_Lab (Debug)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "CITA_417_FPS_Lab Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_Lab (DebugGame)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "CITA_417_FPS_Lab Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_Lab (Development)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "CITA_417_FPS_Lab Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_Lab (Test)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "CITA_417_FPS_Lab Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_Lab (Shipping)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "CITA_417_FPS_Lab Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_LabEditor (Debug)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "CITA_417_FPS_LabEditor Linux Debug Build",
+				"args": [
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject"
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_LabEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "CITA_417_FPS_LabEditor Linux DebugGame Build",
+				"args": [
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject"
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Launch CITA_417_FPS_LabEditor (Development)",
+				"request": "launch",
+				"program": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "CITA_417_FPS_LabEditor Linux Development Build",
+				"args": [
+					"/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject"
+				],
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true,
+				"sourceFileMap": {
+					"/UEVFS/CITA_417_FPS_Lab": "/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab",
+					"/UEVFS/Root": "/home/jandel/Documents/Linux_Unreal_Engine"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/jandel/Documents/Unreal Projects/CITA_417_FPS_Lab/CITA_417_FPS_Lab.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"env": {
+					"PATH": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/ThirdParty/DotNet/8.0.300/linux-x64:${env:PATH}",
+					"DOTNET_ROOT": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/ThirdParty/DotNet/8.0.300/linux-x64",
+					"DOTNET_HOST_PATH": "/home/jandel/Documents/Linux_Unreal_Engine/Engine/Binaries/ThirdParty/DotNet/8.0.300/linux-x64/dotnet",
+					"DOTNET_MULTILEVEL_LOOKUP": "0",
+					"DOTNET_ROLL_FORWARD": "LatestMajor"
+				},
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/jandel/Documents/Linux_Unreal_Engine"
+			}
+		]
+	}
+}
